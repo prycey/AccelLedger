@@ -1,0 +1,33 @@
+const FLAG_OKAY = "*";
+const FLAG_WARNING = "!";
+const FLAG_PADDING = "#";
+const FLAG_SUMMARIZE = "S";
+const FLAG_TRANSFER = "T";
+const FLAG_CONVERSIONS = "C";
+const FLAG_MERGING = "M";
+
+const ALLOWED_FLAGS = new Set([
+  FLAG_OKAY,
+  FLAG_WARNING,
+  FLAG_PADDING,
+  FLAG_SUMMARIZE,
+  FLAG_TRANSFER,
+  FLAG_CONVERSIONS,
+  FLAG_MERGING,
+]);
+
+function isFlag(string) {
+  return ALLOWED_FLAGS.has(string);
+}
+
+export {
+  FLAG_OKAY,
+  FLAG_WARNING,
+  FLAG_PADDING,
+  FLAG_SUMMARIZE,
+  FLAG_TRANSFER,
+  FLAG_CONVERSIONS,
+  FLAG_MERGING,
+  ALLOWED_FLAGS,
+  isFlag,
+};
